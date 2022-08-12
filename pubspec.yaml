@@ -43,6 +43,7 @@ dependencies:
   panorama: ^0.4.1
   flutter_launcher_icons: ^0.9.3
   cached_network_image: ^3.2.1
+  bloc: ^8.1.0
 
 flutter_icons:
   image_path: "assets/images/thetatsd.png"
