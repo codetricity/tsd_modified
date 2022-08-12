@@ -45,7 +45,7 @@ class PanoramaNetwork extends StatelessWidget {
                 child: Center(
                     child: Text(
                   text,
-                  style: const TextStyle(color: Colors.white, fontSize: 30),
+                  style: const TextStyle(color: Colors.white, fontSize: 36),
                 )),
               )
             : Container(),
@@ -65,13 +65,13 @@ class PanoramaNetwork extends StatelessWidget {
                 // sensorControl: SensorControl.Orientation,
                 hotspots: [
                   Hotspot(
-                    name: 'next scene',
+                    name: 'explore',
                     latitude: -33.0,
                     longitude: 123.0,
-                    width: 260.0,
-                    height: 260.0,
+                    width: 300.0,
+                    height: 300.0,
                     widget: hotspotButton(
-                        text: 'next scene',
+                        text: 'explore',
                         icon: Icons.arrow_upward,
                         onPressed: () {
                           if (state.urlIndex < urls.length) {

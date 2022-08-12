@@ -192,10 +192,10 @@ class PanoramaWidget extends StatelessWidget {
               name: 'next scene',
               latitude: -33.0,
               longitude: 123.0,
-              width: 260.0,
-              height: 260.0,
+              width: 300.0,
+              height: 300.0,
               widget: hotspotButton(
-                  text: 'next scene',
+                  text: 'explore',
                   icon: Icons.arrow_upward,
                   onPressed: () {
                     Navigator.push(

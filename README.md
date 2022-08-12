@@ -1,4 +1,6 @@
-# 12. Take Save Display 
+# Take Save Display Modified
+
+![modified screenshot](docs/modified_gui.gif)
 
 A demonstration of using the RICOH THETA X camera with Android and IOS phones.
 
