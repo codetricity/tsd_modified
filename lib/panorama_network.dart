@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:panorama/panorama.dart';
@@ -74,7 +75,7 @@ class PanoramaNetwork extends StatelessWidget {
                         text: 'explore',
                         icon: Icons.arrow_upward,
                         onPressed: () {
-                          if (state.urlIndex < urls.length) {
+                          if (state.urlIndex < urls.length - 1) {
                             context
                                 .read<PanoramaBloc>()
                                 .add(IncrementPanoramaEvent());
@@ -92,7 +93,11 @@ class PanoramaNetwork extends StatelessWidget {
                 ],
                 // animSpeed: 1.0,
                 // sensorControl: SensorControl.Orientation,
-                child: Image.network(urls[state.urlIndex]));
+                child: Image(
+                  image: CachedNetworkImageProvider(urls[state.urlIndex]),
+                )
+                // Image.network(urls[state.urlIndex])
+                );
           },
         ),
       ),
